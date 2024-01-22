@@ -1,3 +1,4 @@
+import 'package:buildyway/pages/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -10,20 +11,11 @@ GoRouter getRouterConfig() => GoRouter(
         navigatorKey: configNavigatorKey,
         routes: <RouteBase>[
           GoRoute(
-              path: Pages.dashboard.route,
-              name: Pages.dashboard.name,
-              builder:
-                  (final BuildContext context, final GoRouterState state) =>
-                      Container(),
-              routes: <RouteBase>[
-                GoRoute(
-                  path: Pages.dashboard.route,
-                  name: Pages.dashboard.name,
-                  builder:
-                      (final BuildContext context, final GoRouterState state) =>
-                          Container(),
-                ),
-              ])
+            path: Pages.dashboard.route,
+            name: Pages.dashboard.name,
+            builder: (final BuildContext context, final GoRouterState state) =>
+                Dashboard(),
+          ),
         ]);
     
 

@@ -1,5 +1,5 @@
 enum Pages {
-  dashboard("dashboard", "/dashboard"),
+  dashboard("dashboard", "/"),
   ;
 
   const Pages(this.name, this.route);
