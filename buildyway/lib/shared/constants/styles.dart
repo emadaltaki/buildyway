@@ -13,15 +13,18 @@ const String satoshiFont = "Satoshi";
 const String openSansFont = "OpenSans";
 const String merriweatherFont = "Merriweather";
 const String futuraFont = "Futura";
+const String source = "Source";
 
 //FontWeight
 const FontWeight lightFont = FontWeight.w300;
 const FontWeight extraLightFont = FontWeight.w200;
 const FontWeight regularFont = FontWeight.w400;
 const FontWeight mediumFont = FontWeight.w500;
+
 const FontWeight semiBoldFont = FontWeight.w600;
 const FontWeight boldFont = FontWeight.w700;
 
+//
 //FontStyle
 const FontStyle italicFont = FontStyle.italic;
 

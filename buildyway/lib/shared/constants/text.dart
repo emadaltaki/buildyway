@@ -1,4 +1,7 @@
-class Change {
-  const Change();
-  static const String aiResult = 'AI Result';
+class NavText {
+  const NavText();
+  static const String dashboard = 'DASHBOARD';
+  static const List navText = [
+    dashboard,
+  ];
 }
