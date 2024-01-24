@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           themeAnimationDuration: Duration.zero,
           theme: ThemeData(
             scrollbarTheme: const ScrollbarThemeData(
-              thumbColor: MaterialStatePropertyAll<Color>(activeBlueColor),
+              thumbColor: MaterialStatePropertyAll<Color>(blackColor),
             ),
           ),
           routerConfig: getRouterConfig(),
