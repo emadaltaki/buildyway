@@ -1,7 +1,6 @@
 import 'package:buildyway/pages/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
 
 import '../shared/helper.dart';
 import 'pages.dart';
@@ -14,7 +13,7 @@ GoRouter getRouterConfig() => GoRouter(
             path: Pages.dashboard.route,
             name: Pages.dashboard.name,
             builder: (final BuildContext context, final GoRouterState state) =>
-                Dashboard(),
+                const Dashboard(),
           ),
         ]);
     

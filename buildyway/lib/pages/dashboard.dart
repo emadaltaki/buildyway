@@ -27,7 +27,7 @@ class Dashboard extends StatelessWidget {
                   SizedBox(
                     width: width * 0.08,
                   ),
-                  Text(
+                  const Text(
                     "BUILDYWAY",
                     style: TextStyle(
                       fontFamily: source,
@@ -49,7 +49,7 @@ class Dashboard extends StatelessWidget {
                           context,
                         ),
                       ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     margin: EdgeInsets.only(
                       right: width * 0.05,
@@ -87,7 +87,7 @@ class Dashboard extends StatelessWidget {
                           inherit: false,
                         ),
                       ),
-                      Icon(Icons.construction_sharp),
+                      const Icon(Icons.construction_sharp),
                       Container(
                         margin: EdgeInsets.only(
                           top: height * 0.05,
@@ -104,11 +104,11 @@ class Dashboard extends StatelessWidget {
                               color: blackColor.withOpacity(0.1),
                               spreadRadius: 1,
                               blurRadius: 10,
-                              offset: Offset(0, 3),
+                              offset: const Offset(0, 3),
                             ),
                           ],
                         ),
-                        child: Text("HEEEEEEEEEEEEEEY"),
+                        child: const Text("HEEEEEEEEEEEEEEY"),
                       ),
                       Container(
                         margin: EdgeInsets.only(
@@ -126,11 +126,11 @@ class Dashboard extends StatelessWidget {
                               color: blackColor.withOpacity(0.1),
                               spreadRadius: 1,
                               blurRadius: 10,
-                              offset: Offset(0, 3),
+                              offset: const Offset(0, 3),
                             ),
                           ],
                         ),
-                        child: Text("HEEEEEEEEEEEEEEY"),
+                        child: const Text("HEEEEEEEEEEEEEEY"),
                       )
                     ],
                   ),
@@ -153,7 +153,7 @@ Widget navTextButtons(
         onPressed: onPressed,
         child: Text(
           label,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: openSansFont,
             fontWeight: regularFont,
             fontSize: 20,

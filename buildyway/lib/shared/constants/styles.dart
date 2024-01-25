@@ -8,6 +8,7 @@ const Color whiteColor = Colors.white;
 const Color yellowColor = Color.fromRGBO(255, 213, 39, 1);
 const Color redColor = Colors.red;
 const Color activeBlueColor = Color.fromRGBO(53, 97, 235, 1);
+const Color grey72Color = Color.fromRGBO(72, 72, 72, 1);
 
 const String satoshiFont = "Satoshi";
 const String openSansFont = "OpenSans";
@@ -70,6 +71,12 @@ const TextStyle openSansFont16ptRegularBlack = TextStyle(
   fontWeight: regularFont,
   fontSize: 16,
   color: blackColor,
+  inherit: false,
+);
+const TextStyle openSansFont16ptGrey72 = TextStyle(
+  fontFamily: openSansFont,
+  fontSize: 16,
+  color: grey72Color,
   inherit: false,
 );
 const TextStyle openSansFont16ptRegularWhite = TextStyle(

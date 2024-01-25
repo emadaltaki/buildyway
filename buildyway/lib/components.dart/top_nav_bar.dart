@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:provider/provider.dart';
-
 class TopNavBarButtons extends StatelessWidget {
   final String label;
   final int index;
