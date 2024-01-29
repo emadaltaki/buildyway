@@ -1,8 +1,11 @@
+import 'package:buildyway/components.dart/users_container.dart';
 import 'package:buildyway/shared/constants/styles.dart';
 import 'package:buildyway/shared/enums/nav_bar_enums.dart';
 import 'package:buildyway/shared/helper.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import '../models/user_info.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -11,6 +14,10 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = getScreenWidth(context);
     double height = getScreenHeight(context);
+    List<UsersContainer> users = [
+      UsersContainer(userInfo: UserInfo(firstName: "test", lastName: "test")),
+      UsersContainer(userInfo: UserInfo(firstName: "test", lastName: "test")),
+    ];
     return Scaffold(
       body: SizedBox(
         width: width,
@@ -88,50 +95,16 @@ class Dashboard extends StatelessWidget {
                         ),
                       ),
                       const Icon(Icons.construction_sharp),
-                      Container(
-                        margin: EdgeInsets.only(
-                          top: height * 0.05,
-                          left: width * 0.05,
-                          right: width * 0.05,
-                        ),
-                        width: width * 0.6,
-                        height: height * .5,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              color: blackColor.withOpacity(0.1),
-                              spreadRadius: 1,
-                              blurRadius: 10,
-                              offset: const Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: const Text("HEEEEEEEEEEEEEEY"),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(
-                          top: height * 0.05,
-                          left: width * 0.05,
-                          right: width * 0.05,
-                        ),
-                        width: width * 0.6,
-                        height: height * .5,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              color: blackColor.withOpacity(0.1),
-                              spreadRadius: 1,
-                              blurRadius: 10,
-                              offset: const Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: const Text("HEEEEEEEEEEEEEEY"),
-                      )
+                      // ...users
+
+                      ListView.builder(
+                          shrinkWrap: true,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return UsersContainer(
+                                userInfo: UserInfo(
+                                    firstName: "test", lastName: "test"));
+                          }),
                     ],
                   ),
                 ),
